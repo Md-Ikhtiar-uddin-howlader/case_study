@@ -28,7 +28,7 @@ class Product{
 
 $ob = new Product;
 
-$ob->setName("Beef burger");
+$ob->setName("chicken burger");
 echo $ob->getName();
 
 
