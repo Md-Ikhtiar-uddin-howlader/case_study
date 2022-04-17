@@ -20,16 +20,29 @@ class Product{
     function getName(){
         return $this->name;
     }
-    function setName($name){
+    function getDescription(){
+        return $this->description;
+    }
+    function getPrice(){
+        return $this->price;
+    }
+
+    function setValue($name, $description, $price){
+
         $this->name = $name;
+        $this->description = $description;
+        $this->price = $price;
+    
     }
 
 }
 
-$ob = new Product;
+$chickenBurger = new Product;
 
-$ob->setName("chicken burger");
-echo $ob->getName();
+$chickenBurger->setValue("chicken burger", "This is chicken burger", 13.5);
+echo $chickenBurger->getName() . " <br> ";
+echo $chickenBurger->getDescription() . " <br> ";
+echo $chickenBurger->getPrice() . " <br> ";
 
 
 ?>
