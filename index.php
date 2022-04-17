@@ -39,12 +39,11 @@ class Product{
 
 $chickenBurger = new Product;
 
-$chickenBurger->setValue("chicken burger", "This is chicken burger", 13.5);
-echo $chickenBurger->getName() . " <br> ";
-echo $chickenBurger->getDescription() . " <br> ";
-echo $chickenBurger->getPrice() . " <br> ";
-
-
+$chickenBurger->setValue("Chicken burger", "This is chicken burger with fried chicken", 13.5);
+$chickenBurgerCheese->setValue("Chicken burger with cheese", "This is chicken burger with fried chicken and cheese", 14.5);
+$bbqChickenBurger->setValue("BBQ Chicken burger with cheese", "This is BBQ chicken burger with bbq chicken petty and cheese", 17.0);
+$beefBurger->setValue("Beef burger", "This is beef burger with beef petty", 14);
+$beefBurgerCheese->setValue("Beef burger with Cheese", "This is beef burger with beef petty and cheese", 15);
 ?>
 </body>
 </html>
