@@ -33,72 +33,181 @@
      <td>A</td>
      <td>a</td>
      <td>10 RM</td>
+    <td>Add Quantity-->
+      <select name="cars" id="cars">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">8</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+  </select>
+  </td>
+
      <td>a</td>
-     <td>a</td>
+
    </tr>
    <tr>
      <td>B</td>
      <td>b</td>
-     <td>b</td>
-     <td>b</td>
+     <td>8RM</td>
+    <td>Add Quantity-->
+      <select name="cars" id="cars">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">8</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+  </select>
+  </td>
      <td>b</td>
    </tr>
+
    <tr>
      <td>C</td>
      <td>c</td>
      <td>c</td>
-     <td>c</td>
+     <td>Add Quantity-->
+      <select name="cars" id="cars">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">8</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+  </select>
+  </td>
      <td>c</td>
    </tr>
+
+
    <tr>
      <td>D</td>
      <td>d</td>
      <td>d</td>
-     <td>d</td>
+     <td>Add Quantity-->
+      <select name="cars" id="cars">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">8</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+  </select>
+  </td>
      <td>d</td>
    </tr>
+
+
    <tr>
      <td>E</td>
      <td></td>
      <td></td>
-     <td></td>
+     <td>Add Quantity-->
+      <select name="cars" id="cars">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">8</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+  </select>
+  </td>
      <td></td>
    </tr>
+
+
    <tr>
      <td>F</td>
      <td></td>
      <td></td>
-     <td></td>
+     <td>Add Quantity-->
+      <select name="cars" id="cars">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">8</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+  </select>
+  </td>
      <td></td>
    </tr>
    <tr>
      <td>G</td>
      <td></td>
      <td></td>
-     <td></td>
+     <td>Add Quantity-->
+      <select name="cars" id="cars">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">8</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+  </select>
+  </td>
      <td></td>
    </tr>
+
    <tr>
      <td>H</td>
      <td></td>
      <td></td>
-     <td></td>
+     <td>Add Quantity-->
+      <select name="cars" id="cars">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">8</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+  </select>
+  </td>
      <td></td>
    </tr>
+
    <tr>
-     <td>I</td>
+   <td></td>
      <td></td>
      <td></td>
-     <td></td>
-     <td></td>
-   </tr>
-   <tr>
-     <td>J</td>
-     <td></td>
-     <td></td>
-     <td></td>
+     <td><b>TOTAL AMOUNT</b></td>
      <td></td>
    </tr>
+   
 </tbody>
  </table><br><br>
 
