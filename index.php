@@ -14,206 +14,8 @@
 </style>
 
 <body>
-    <!-- <h1 class="headline">**Welcome to IIUM Cafe**</h1> -->
-    <marquee onmouseover="stop()"; onmouseout="start()" class="headline" ><h1>**Welcome to IIUM Cafe**</h1></marquee>
-    <h3 class ="heading"><u>'Please Select Your Items'</u></h3> 
- 
- <table class="content-table">
-  <thead>
-   <tr>
-     <th>Item List</th>
-     <th>Details</th>
-     <th>Price</th>
-     <th>Quantity</th>
-     <th>Total</th>
-   </tr>
-</thead>
-   <tbody>
-   <tr>
-     <td>A</td>
-     <td>a</td>
-     <td>10 RM</td>
-    <td>Add Quantity-->
-      <select name="cars" id="cars">
-    <option value="0">0</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">8</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-  </select>
-  </td>
 
-     <td>a</td>
-
-   </tr>
-   <tr>
-     <td>B</td>
-     <td>b</td>
-     <td>8RM</td>
-    <td>Add Quantity-->
-      <select name="cars" id="cars">
-    <option value="0">0</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">8</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-  </select>
-  </td>
-     <td>b</td>
-   </tr>
-
-   <tr>
-     <td>C</td>
-     <td>c</td>
-     <td>c</td>
-     <td>Add Quantity-->
-      <select name="cars" id="cars">
-    <option value="0">0</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">8</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-  </select>
-  </td>
-     <td>c</td>
-   </tr>
-
-
-   <tr>
-     <td>D</td>
-     <td>d</td>
-     <td>d</td>
-     <td>Add Quantity-->
-      <select name="cars" id="cars">
-    <option value="0">0</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">8</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-  </select>
-  </td>
-     <td>d</td>
-   </tr>
-
-
-   <tr>
-     <td>E</td>
-     <td></td>
-     <td></td>
-     <td>Add Quantity-->
-      <select name="cars" id="cars">
-    <option value="0">0</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">8</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-  </select>
-  </td>
-     <td></td>
-   </tr>
-
-
-   <tr>
-     <td>F</td>
-     <td></td>
-     <td></td>
-     <td>Add Quantity-->
-      <select name="cars" id="cars">
-    <option value="0">0</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">8</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-  </select>
-  </td>
-     <td></td>
-   </tr>
-   <tr>
-     <td>G</td>
-     <td></td>
-     <td></td>
-     <td>Add Quantity-->
-      <select name="cars" id="cars">
-    <option value="0">0</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">8</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-  </select>
-  </td>
-     <td></td>
-   </tr>
-
-   <tr>
-     <td>H</td>
-     <td></td>
-     <td></td>
-     <td>Add Quantity-->
-      <select name="cars" id="cars">
-    <option value="0">0</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">8</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-  </select>
-  </td>
-     <td></td>
-   </tr>
-
-   <tr>
-   <td></td>
-     <td></td>
-     <td></td>
-     <td><b>TOTAL AMOUNT</b></td>
-     <td></td>
-   </tr>
-   
-</tbody>
- </table><br><br>
-
- <center><button class="button">SUBMIT FOR INVOICE</button></center>
-  
-   <?php
+<?php
 class Product{
    public $name;
    public $description;
@@ -244,13 +46,218 @@ $chickenBurgerCheese = new Product;
 $bbqChickenBurger = new Product;
 $beefBurger = new Product;
 $beefBurgerCheese = new Product;
+$juicyBeefBurger = new Product;
+$softDrinks = new Product;
+$iceCream = new Product;
 
 $chickenBurger->setValue("Chicken burger", "This is chicken burger with fried chicken", 13.5);
-$chickenBurgerCheese->setValue("Chicken burger with cheese","This is chicken burger with fried chicken and cheese", 14.5);
-$bbqChickenBurger->setValue("BBQ Chicken burger with cheese", "This is BBQ chicken burger with bbq chicken petty and cheese", 17.0);
+$chickenBurgerCheese->setValue("Chicken cheese burger","This is chicken burger with fried chicken and cheese", 14.5);
+$bbqChickenBurger->setValue("BBQ Chicken cheese burger", "This is BBQ chicken burger with bbq chicken petty and cheese", 17.0);
 $beefBurger->setValue("Beef burger", "This is beef burger with beef petty", 14);
-$beefBurgerCheese->setValue("Beef burger with Cheese", "This is beef burger with beef petty and cheese", 15);
-
+$beefBurgerCheese->setValue("Beef Cheese burger", "This is beef burger with beef petty and cheese", 15);
+$juicyBeefBurger->setValue("Juicy Beef Cheese burger", "This is beef burger with double juicy beef petty and cheese", 19);
+$softDrinks->setValue("Soft Drinks", "coke, pepsi, fanta, mello, cold-coffee", 4);
+$iceCream->setValue("Ice-Cream", "kitket Ice-Cream, Vanilla Ice-Cream, Chocolate Ice-Cream", 6);
 ?>
+
+
+
+    <marquee onmouseover="stop()"; onmouseout="start()" class="headline" ><h1>**Welcome to IIUM Cafe**</h1></marquee>
+    <h3 class ="heading"><u>'Please Select Your Items'</u></h3> 
+ 
+ <table class="content-table">
+  <thead>
+   <tr>
+     <th>Item List</th>
+     <th>Details</th>
+     <th>Price</th>
+     <th>Quantity</th>
+     <th>Total</th>
+   </tr>
+</thead>
+   <tbody>
+   <tr>
+     <td><?php echo $chickenBurger->getName()?></td>
+     <td><?php echo $chickenBurger->getDescription()?></td>
+     <td><?php echo $chickenBurger->getPrice()?></td>
+    <td>Add Quantity-->
+      <select name="cars" id="cars">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">8</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+  </select>
+  </td>
+
+     <td></td>
+
+   </tr>
+   <tr>
+   <td><?php echo $chickenBurgerCheese->getName()?></td>
+    <td><?php echo $chickenBurgerCheese->getDescription()?></td>
+    <td><?php echo $chickenBurgerCheese->getPrice()?></td>
+    <td>Add Quantity-->
+      <select name="cars" id="cars">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">8</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+  </select>
+  </td>
+     <td></td>
+   </tr>
+
+   <tr>
+     <td><?php echo $bbqChickenBurger->getName()?></td>
+     <td><?php echo $bbqChickenBurger->getDescription()?></td>
+     <td><?php echo $bbqChickenBurger->getPrice()?></td>
+     <td>Add Quantity-->
+      <select name="cars" id="cars">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">8</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+  </select>
+  </td>
+     <td></td>
+   </tr>
+
+
+   <tr>
+   <td><?php echo $beefBurger->getName()?></td>
+     <td><?php echo $beefBurger->getDescription()?></td>
+     <td><?php echo $beefBurger->getPrice()?></td>
+     <td>Add Quantity-->
+      <select name="cars" id="cars">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">8</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+  </select>
+  </td>
+     <td></td>
+   </tr>
+
+
+   <tr>
+   <td><?php echo $beefBurgerCheese->getName()?></td>
+     <td><?php echo $beefBurgerCheese->getDescription()?></td>
+     <td><?php echo $beefBurgerCheese->getPrice()?></td>
+     <td>Add Quantity-->
+      <select name="cars" id="cars">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">8</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+  </select>
+  </td>
+     <td></td>
+   </tr>
+
+
+   <tr>
+   <td><?php echo $juicyBeefBurger->getName()?></td>
+     <td><?php echo $juicyBeefBurger->getDescription()?></td>
+     <td><?php echo $juicyBeefBurger->getPrice()?></td>
+     <td>Add Quantity-->
+      <select name="cars" id="cars">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">8</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+  </select>
+  </td>
+     <td></td>
+   </tr>
+   <tr>
+   <td><?php echo $softDrinks->getName()?></td>
+     <td><?php echo $softDrinks->getDescription()?></td>
+     <td><?php echo $softDrinks->getPrice()?></td>
+     <td>Add Quantity-->
+      <select name="cars" id="cars">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">8</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+  </select>
+  </td>
+     <td></td>
+   </tr>
+
+   <tr>
+   <td><?php echo $iceCream->getName()?></td>
+     <td><?php echo $iceCream->getDescription()?></td>
+     <td><?php echo $iceCream->getPrice()?></td>
+     <td>Add Quantity-->
+      <select name="cars" id="cars">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">8</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+  </select>
+  </td>
+     <td></td>
+   </tr>
+
+   <tr>
+       <td></td>
+       <td></td>
+       <td></td>
+     <td><b>TOTAL AMOUNT</b></td>
+   </tr>
+   
+</tbody>
+ </table><br><br>
+
+ <center><button class="button">SUBMIT FOR INVOICE</button></center>
+
 </body>
 </html>
