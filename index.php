@@ -47,8 +47,8 @@ $bbqChickenBurger = new Product;
 $beefBurger = new Product;
 $beefBurgerCheese = new Product;
 $juicyBeefBurger = new Product;
-$softDrinks = new Product;
-$iceCream = new Product;
+$bun = new Product;
+$cheeseBun = new Product;
 
 $chickenBurger->setValue("Chicken burger", "This is chicken burger with fried chicken", 13.5);
 $chickenBurgerCheese->setValue("Chicken cheese burger","This is chicken burger with fried chicken and cheese", 14.5);
@@ -56,8 +56,8 @@ $bbqChickenBurger->setValue("BBQ Chicken cheese burger", "This is BBQ chicken bu
 $beefBurger->setValue("Beef burger", "This is beef burger with beef petty", 14);
 $beefBurgerCheese->setValue("Beef Cheese burger", "This is beef burger with beef petty and cheese", 15);
 $juicyBeefBurger->setValue("Juicy Beef Cheese burger", "This is beef burger with double juicy beef petty and cheese", 19);
-$softDrinks->setValue("Soft Drinks", "coke, pepsi, fanta, mello, cold-coffee", 4);
-$iceCream->setValue("Ice-Cream", "kitket Ice-Cream, Vanilla Ice-Cream, Chocolate Ice-Cream", 6);
+$bun->setValue("Chocolate bun", "Small chocolate bun", 2);
+$cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.5);
 ?>
 
 
@@ -81,7 +81,7 @@ $iceCream->setValue("Ice-Cream", "kitket Ice-Cream, Vanilla Ice-Cream, Chocolate
      <td><?php echo $chickenBurger->getDescription()?></td>
      <td><?php echo $chickenBurger->getPrice()?></td>
     <td>Add Quantity-->
-      <select name="cars" id="cars">
+      <select>
     <option value="0">0</option>
     <option value="1">1</option>
     <option value="2">2</option>
@@ -103,7 +103,7 @@ $iceCream->setValue("Ice-Cream", "kitket Ice-Cream, Vanilla Ice-Cream, Chocolate
     <td><?php echo $chickenBurgerCheese->getDescription()?></td>
     <td><?php echo $chickenBurgerCheese->getPrice()?></td>
     <td>Add Quantity-->
-      <select name="cars" id="cars">
+      <select>
     <option value="0">0</option>
     <option value="1">1</option>
     <option value="2">2</option>
@@ -124,7 +124,7 @@ $iceCream->setValue("Ice-Cream", "kitket Ice-Cream, Vanilla Ice-Cream, Chocolate
      <td><?php echo $bbqChickenBurger->getDescription()?></td>
      <td><?php echo $bbqChickenBurger->getPrice()?></td>
      <td>Add Quantity-->
-      <select name="cars" id="cars">
+      <select>
     <option value="0">0</option>
     <option value="1">1</option>
     <option value="2">2</option>
@@ -146,7 +146,7 @@ $iceCream->setValue("Ice-Cream", "kitket Ice-Cream, Vanilla Ice-Cream, Chocolate
      <td><?php echo $beefBurger->getDescription()?></td>
      <td><?php echo $beefBurger->getPrice()?></td>
      <td>Add Quantity-->
-      <select name="cars" id="cars">
+      <select>
     <option value="0">0</option>
     <option value="1">1</option>
     <option value="2">2</option>
@@ -168,7 +168,7 @@ $iceCream->setValue("Ice-Cream", "kitket Ice-Cream, Vanilla Ice-Cream, Chocolate
      <td><?php echo $beefBurgerCheese->getDescription()?></td>
      <td><?php echo $beefBurgerCheese->getPrice()?></td>
      <td>Add Quantity-->
-      <select name="cars" id="cars">
+      <select>
     <option value="0">0</option>
     <option value="1">1</option>
     <option value="2">2</option>
@@ -190,7 +190,7 @@ $iceCream->setValue("Ice-Cream", "kitket Ice-Cream, Vanilla Ice-Cream, Chocolate
      <td><?php echo $juicyBeefBurger->getDescription()?></td>
      <td><?php echo $juicyBeefBurger->getPrice()?></td>
      <td>Add Quantity-->
-      <select name="cars" id="cars">
+      <select>
     <option value="0">0</option>
     <option value="1">1</option>
     <option value="2">2</option>
@@ -206,11 +206,11 @@ $iceCream->setValue("Ice-Cream", "kitket Ice-Cream, Vanilla Ice-Cream, Chocolate
      <td></td>
    </tr>
    <tr>
-   <td><?php echo $softDrinks->getName()?></td>
-     <td><?php echo $softDrinks->getDescription()?></td>
-     <td><?php echo $softDrinks->getPrice()?></td>
+   <td><?php echo $bun->getName()?></td>
+     <td><?php echo $bun->getDescription()?></td>
+     <td><?php echo $bun->getPrice()?></td>
      <td>Add Quantity-->
-      <select name="cars" id="cars">
+      <select>
     <option value="0">0</option>
     <option value="1">1</option>
     <option value="2">2</option>
@@ -227,11 +227,11 @@ $iceCream->setValue("Ice-Cream", "kitket Ice-Cream, Vanilla Ice-Cream, Chocolate
    </tr>
 
    <tr>
-   <td><?php echo $iceCream->getName()?></td>
-     <td><?php echo $iceCream->getDescription()?></td>
-     <td><?php echo $iceCream->getPrice()?></td>
+   <td><?php echo $cheeseBun->getName()?></td>
+     <td><?php echo $cheeseBun->getDescription()?></td>
+     <td><?php echo $cheeseBun->getPrice()?></td>
      <td>Add Quantity-->
-      <select name="cars" id="cars">
+      <select>
     <option value="0">0</option>
     <option value="1">1</option>
     <option value="2">2</option>
