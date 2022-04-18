@@ -7,12 +7,104 @@
     <title>A Point of Sale System</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+
+
+
+</style>
+
 <body>
-    <!-- <h1 class="headline">Welcome to IIUM cafe</h1> -->
-    <marquee onmouseover="stop()"; onmouseout="start()" class="headline" ><h1>Welcome to IIUM cafe</h1></marquee>
-    <h3 class ="heading">Please select your desired food</h3>
-    <h1>just test</h1>
-    <?php
+    <!-- <h1 class="headline">**Welcome to IIUM Cafe**</h1> -->
+    <marquee onmouseover="stop()"; onmouseout="start()" class="headline" ><h1>**Welcome to IIUM Cafe**</h1></marquee>
+    <h3 class ="heading"><u>'Please Select Your Items'</u></h3> 
+ 
+ <table class="content-table">
+  <thead>
+   <tr>
+     <th>Item List</th>
+     <th>Details</th>
+     <th>Price</th>
+     <th>Quantity</th>
+     <th>Total</th>
+   </tr>
+</thead>
+   <tbody>
+   <tr>
+     <td>A</td>
+     <td>a</td>
+     <td>10 RM</td>
+     <td>a</td>
+     <td>a</td>
+   </tr>
+   <tr>
+     <td>B</td>
+     <td>b</td>
+     <td>b</td>
+     <td>b</td>
+     <td>b</td>
+   </tr>
+   <tr>
+     <td>C</td>
+     <td>c</td>
+     <td>c</td>
+     <td>c</td>
+     <td>c</td>
+   </tr>
+   <tr>
+     <td>D</td>
+     <td>d</td>
+     <td>d</td>
+     <td>d</td>
+     <td>d</td>
+   </tr>
+   <tr>
+     <td>E</td>
+     <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+   </tr>
+   <tr>
+     <td>F</td>
+     <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+   </tr>
+   <tr>
+     <td>G</td>
+     <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+   </tr>
+   <tr>
+     <td>H</td>
+     <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+   </tr>
+   <tr>
+     <td>I</td>
+     <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+   </tr>
+   <tr>
+     <td>J</td>
+     <td></td>
+     <td></td>
+     <td></td>
+     <td></td>
+   </tr>
+</tbody>
+ </table><br><br>
+
+ <center><button class="button">SUBMIT FOR INVOICE</button></center>
+  
+   <?php
 class Product{
    public $name;
    public $description;
