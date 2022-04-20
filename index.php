@@ -252,6 +252,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
        <td></td>
        <td></td>
      <td><b>TOTAL AMOUNT</b></td>
+     <td id="totalAmount" onchange="getValue()"></td>
    </tr>
    
 </tbody>
@@ -279,10 +280,10 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
     </thead>
     <tbody>
       <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td id="Amount" onchange="getValue()"></td>
+        <td id="rmdnAmount" onchange="getValue()"></td>
+        <td id="gstAmount" onchange="getValue()"></td>
+        <td id="finalAmount" onchange="getValue()"></td>
       </tr>
     </tbody>
   </div>
@@ -293,7 +294,8 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
 
 // 13.5 , 14.5 , 17.0, 14, 15,19, 2, 1.5
 
-  function getValue(){
+  function getValue()
+  {
     let quantity1= document.getElementById("quantity1").value;
     let quantity2= document.getElementById("quantity2").value;
     let quantity3= document.getElementById("quantity3").value;
@@ -319,12 +321,20 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
     let productTotal6 = document.getElementById("productTotal6").innerHTML = price6;
     let productTotal7 = document.getElementById("productTotal7").innerHTML = price7;
     let productTotal8 = document.getElementById("productTotal8").innerHTML = price8;
+    
+    let totalAmount = document.getElementById("totalAmount").innerHTML =
+    Math.floor((price1+price2+price3+price4+price5+price6+price7+price8)*100) /100.0;
 
+    let Amount = document.getElementById("Amount").innerHTML = totalAmount;
+
+    let rmdnAmount = document.getElementById("rmdnAmount").innerHTML =
+    Math.floor((Amount - (Amount*0.02))*100) / 100.0;
+
+    let gstAmount = document.getElementById("gstAmount").innerHTML =
+    Math.floor((rmdnAmount*1.06)*100) / 100.0;
+
+    let finalAmount = document.getElementById("finalAmount").innerHTML = gstAmount;
   }
-
-
-
-
 
 // Get the modal
 var modal = document.getElementById("myModal");
