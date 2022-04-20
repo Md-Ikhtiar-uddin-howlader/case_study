@@ -231,7 +231,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
      <td><?php echo $cheeseBun->getDescription()?></td>
      <td><?php echo $cheeseBun->getPrice()?></td>
      <td>Add Quantity-->
-      <select id="quantity8" onchange="getValue()">
+      <select id="quantity8" onchange="getValue()" onchange="getTotal()">
     <option value="0">0</option>
     <option value="1">1</option>
     <option value="2">2</option>
