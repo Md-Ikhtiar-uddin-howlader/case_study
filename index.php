@@ -327,7 +327,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
     totalAmount = totalAmount.toFixed(2);
 
     let Amount = document.getElementById("Amount").innerHTML = totalAmount;
-    Amount = Amount.toFixed(2);
+    //Amount = Amount.toFixed(2);
 
     let rmdnAmount = document.getElementById("rmdnAmount").innerHTML =
     Amount - (Amount*0.02);
