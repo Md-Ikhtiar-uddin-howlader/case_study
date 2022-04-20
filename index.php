@@ -280,10 +280,10 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
     </thead>
     <tbody>
       <tr>
-        <td id="Amount" onchange="Amount.getValue()"></td>
-        <td id="rmdnAmount" onchange="RoundedRmdnAmount.getValue()"></td>
-        <td id="gstAmount" onchange="RoundedGstAmount.getValue()"></td>
-        <td id="finalAmount" onchange="RoundedGstAmount.getValue()"></td>
+        <td id="Amount" onchange="getValue()"></td>
+        <td id="rmdnAmount" onchange="getValue()"></td>
+        <td id="gstAmount" onchange="getValue()"></td>
+        <td id="finalAmount" onchange="getValue()"></td>
       </tr>
     </tbody>
   </div>
@@ -323,19 +323,17 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
     let productTotal8 = document.getElementById("productTotal8").innerHTML = price8;
     
     let totalAmount = document.getElementById("totalAmount").innerHTML =
-    (price1+price2+price3+price4+price5+price6+price7+price8);
+    Math.floor((price1+price2+price3+price4+price5+price6+price7+price8)*100) /100.0;
 
     let Amount = document.getElementById("Amount").innerHTML = totalAmount;
 
     let rmdnAmount = document.getElementById("rmdnAmount").innerHTML =
-    Amount - (Amount*0.02);
-    RoundedRmdnAmount = rmdnAmount.toFixed(2);
+    Math.floor((Amount - (Amount*0.02))*100) / 100.0;
 
     let gstAmount = document.getElementById("gstAmount").innerHTML =
-    RoundedRmdnAmount*1.06;
-    RoundedGstAmount = gstAmount.toFixed(2);
+    Math.floor((rmdnAmount*1.06)*100) / 100.0;
 
-    let finalAmount = document.getElementById("finalAmount").innerHTML = RoundedGstAmount;
+    let finalAmount = document.getElementById("finalAmount").innerHTML = gstAmount;
   }
 
 // Get the modal
