@@ -50,14 +50,14 @@ $juicyBeefBurger = new Product;
 $bun = new Product;
 $cheeseBun = new Product;
 
-$chickenBurger->setValue("Chicken burger", "This is chicken burger with fried chicken", 13.5);
-$chickenBurgerCheese->setValue("Chicken cheese burger","This is chicken burger with fried chicken and cheese", 14.5);
-$bbqChickenBurger->setValue("BBQ Chicken cheese burger", "This is BBQ chicken burger with bbq chicken petty and cheese", 17.0);
-$beefBurger->setValue("Beef burger", "This is beef burger with beef petty", 14);
-$beefBurgerCheese->setValue("Beef Cheese burger", "This is beef burger with beef petty and cheese", 15);
-$juicyBeefBurger->setValue("Juicy Beef Cheese burger", "This is beef burger with double juicy beef petty and cheese", 19);
-$bun->setValue("Chocolate bun", "Small chocolate bun", 2);
-$cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.5);
+$chickenBurger->setValue("Chicken burger", "This is chicken burger with fried chicken", 13.50);
+$chickenBurgerCheese->setValue("Chicken cheese burger","This is chicken burger with fried chicken and cheese", 14.50);
+$bbqChickenBurger->setValue("BBQ Chicken cheese burger", "This is BBQ chicken burger with bbq chicken petty and cheese", 17.00);
+$beefBurger->setValue("Beef burger", "This is beef burger with beef petty", 14.00);
+$beefBurgerCheese->setValue("Beef Cheese burger", "This is beef burger with beef petty and cheese", 15.00);
+$juicyBeefBurger->setValue("Juicy Beef Cheese burger", "This is beef burger with double juicy beef petty and cheese", 19.00);
+$bun->setValue("Chocolate bun", "Small chocolate bun", 2.00);
+$cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
 ?>
 
 
@@ -81,7 +81,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.5);
      <td><?php echo $chickenBurger->getDescription()?></td>
      <td><?php echo $chickenBurger->getPrice()?></td>
     <td>Add Quantity-->
-      <select>
+      <select id="quantity1" onchange="getValue()">
     <option value="0">0</option>
     <option value="1">1</option>
     <option value="2">2</option>
@@ -95,7 +95,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.5);
   </select>
   </td>
 
-     <td></td>
+     <td id="productTotal1"></td>
 
    </tr>
    <tr>
@@ -103,7 +103,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.5);
     <td><?php echo $chickenBurgerCheese->getDescription()?></td>
     <td><?php echo $chickenBurgerCheese->getPrice()?></td>
     <td>Add Quantity-->
-      <select>
+      <select id="quantity2" onchange="getValue()">
     <option value="0">0</option>
     <option value="1">1</option>
     <option value="2">2</option>
@@ -116,7 +116,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.5);
     <option value="9">9</option>
   </select>
   </td>
-     <td></td>
+     <td id="productTotal2"></td>
    </tr>
 
    <tr>
@@ -124,7 +124,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.5);
      <td><?php echo $bbqChickenBurger->getDescription()?></td>
      <td><?php echo $bbqChickenBurger->getPrice()?></td>
      <td>Add Quantity-->
-      <select>
+      <select id="quantity3" onchange="getValue()">
     <option value="0">0</option>
     <option value="1">1</option>
     <option value="2">2</option>
@@ -137,7 +137,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.5);
     <option value="9">9</option>
   </select>
   </td>
-     <td></td>
+     <td id="productTotal3"></td>
    </tr>
 
 
@@ -146,7 +146,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.5);
      <td><?php echo $beefBurger->getDescription()?></td>
      <td><?php echo $beefBurger->getPrice()?></td>
      <td>Add Quantity-->
-      <select>
+      <select id="quantity4" onchange="getValue()">
     <option value="0">0</option>
     <option value="1">1</option>
     <option value="2">2</option>
@@ -159,7 +159,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.5);
     <option value="9">9</option>
   </select>
   </td>
-     <td></td>
+     <td id="productTotal4"></td>
    </tr>
 
 
@@ -168,7 +168,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.5);
      <td><?php echo $beefBurgerCheese->getDescription()?></td>
      <td><?php echo $beefBurgerCheese->getPrice()?></td>
      <td>Add Quantity-->
-      <select>
+      <select id="quantity5" onchange="getValue()">
     <option value="0">0</option>
     <option value="1">1</option>
     <option value="2">2</option>
@@ -181,7 +181,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.5);
     <option value="9">9</option>
   </select>
   </td>
-     <td></td>
+     <td id="productTotal5"></td>
    </tr>
 
 
@@ -190,7 +190,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.5);
      <td><?php echo $juicyBeefBurger->getDescription()?></td>
      <td><?php echo $juicyBeefBurger->getPrice()?></td>
      <td>Add Quantity-->
-      <select>
+      <select id="quantity6" onchange="getValue()">
     <option value="0">0</option>
     <option value="1">1</option>
     <option value="2">2</option>
@@ -203,14 +203,14 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.5);
     <option value="9">9</option>
   </select>
   </td>
-     <td></td>
+     <td id="productTotal6"></td>
    </tr>
    <tr>
    <td><?php echo $bun->getName()?></td>
      <td><?php echo $bun->getDescription()?></td>
      <td><?php echo $bun->getPrice()?></td>
      <td>Add Quantity-->
-      <select>
+      <select id="quantity7" onchange="getValue()">
     <option value="0">0</option>
     <option value="1">1</option>
     <option value="2">2</option>
@@ -223,7 +223,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.5);
     <option value="9">9</option>
   </select>
   </td>
-     <td></td>
+     <td id="productTotal7"></td>
    </tr>
 
    <tr>
@@ -231,7 +231,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.5);
      <td><?php echo $cheeseBun->getDescription()?></td>
      <td><?php echo $cheeseBun->getPrice()?></td>
      <td>Add Quantity-->
-      <select>
+      <select id="quantity8" onchange="getValue()">
     <option value="0">0</option>
     <option value="1">1</option>
     <option value="2">2</option>
@@ -244,7 +244,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.5);
     <option value="9">9</option>
   </select>
   </td>
-     <td></td>
+     <td id="productTotal8"></td>
    </tr>
 
    <tr>
@@ -291,6 +291,42 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.5);
 </div>
 
 <script>
+
+// 13.5 , 14.5 , 17.0, 14, 15,19, 2, 1.5
+
+  function getValue(){
+    let quantity1= document.getElementById("quantity1").value;
+    let quantity2= document.getElementById("quantity2").value;
+    let quantity3= document.getElementById("quantity3").value;
+    let quantity4= document.getElementById("quantity4").value;
+    let quantity5= document.getElementById("quantity5").value;
+    let quantity6= document.getElementById("quantity6").value;
+    let quantity7= document.getElementById("quantity7").value;
+    let quantity8= document.getElementById("quantity8").value;
+    let price1 = quantity1*13.5;
+    let price2 = quantity2*14.5;
+    let price3 = quantity3*17;
+    let price4 = quantity4*14;
+    let price5 = quantity5*15;
+    let price6 = quantity6*19;
+    let price7 = quantity7*2;
+    let price8 = quantity8*1.5;
+
+    let productTotal1 = document.getElementById("productTotal1").innerHTML = price1;
+    let productTotal2 = document.getElementById("productTotal2").innerHTML = price2;
+    let productTotal3 = document.getElementById("productTotal3").innerHTML = price3;
+    let productTotal4 = document.getElementById("productTotal4").innerHTML = price4;
+    let productTotal5 = document.getElementById("productTotal5").innerHTML = price5;
+    let productTotal6 = document.getElementById("productTotal6").innerHTML = price6;
+    let productTotal7 = document.getElementById("productTotal7").innerHTML = price7;
+    let productTotal8 = document.getElementById("productTotal8").innerHTML = price8;
+
+  }
+
+
+
+
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
