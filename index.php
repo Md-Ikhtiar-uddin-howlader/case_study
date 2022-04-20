@@ -326,15 +326,32 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
 
   function getTotal()
   {
-    /* let productTotal1 = document.getElementById("productTotal1").innerHTML;
-    let productTotal2 = document.getElementById("productTotal2").innerHTML;
-    let productTotal3 = document.getElementById("productTotal3").innerHTML;
-    let productTotal4 = document.getElementById("productTotal4").innerHTML;
-    let productTotal5 = document.getElementById("productTotal5").innerHTML;
-    let productTotal6 = document.getElementById("productTotal6").innerHTML;
-    let productTotal7 = document.getElementById("productTotal7").innerHTML;
-    let productTotal8 = document.getElementById("productTotal8").innerHTML; */
-    
+    let quantity1= document.getElementById("quantity1").value;
+    let quantity2= document.getElementById("quantity2").value;
+    let quantity3= document.getElementById("quantity3").value;
+    let quantity4= document.getElementById("quantity4").value;
+    let quantity5= document.getElementById("quantity5").value;
+    let quantity6= document.getElementById("quantity6").value;
+    let quantity7= document.getElementById("quantity7").value;
+    let quantity8= document.getElementById("quantity8").value;
+    let price1 = quantity1*13.5;
+    let price2 = quantity2*14.5;
+    let price3 = quantity3*17;
+    let price4 = quantity4*14;
+    let price5 = quantity5*15;
+    let price6 = quantity6*19;
+    let price7 = quantity7*2;
+    let price8 = quantity8*1.5;
+
+    let productTotal1 = document.getElementById("productTotal1").innerHTML = price1;
+    let productTotal2 = document.getElementById("productTotal2").innerHTML = price2;
+    let productTotal3 = document.getElementById("productTotal3").innerHTML = price3;
+    let productTotal4 = document.getElementById("productTotal4").innerHTML = price4;
+    let productTotal5 = document.getElementById("productTotal5").innerHTML = price5;
+    let productTotal6 = document.getElementById("productTotal6").innerHTML = price6;
+    let productTotal7 = document.getElementById("productTotal7").innerHTML = price7;
+    let productTotal8 = document.getElementById("productTotal8").innerHTML = price8;
+
     let totalAmount = document.getElementById("totalAmount").innerHTML = productTotal1 + productTotal2 + productTotal3 
     + productTotal4 + productTotal5 + productTotal6 + productTotal7 + productTotal8;
   }
