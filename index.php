@@ -322,11 +322,10 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
     let productTotal8 = document.getElementById("productTotal8").innerHTML = price8;
 
     let totalAmount = document.getElementById("totalAmount").value;
-    for (let i=0; i<8; i++)
-    {
-      totalAmount += productTotal1 + productTotal2 + productTotal3 + productTotal4
-      + productTotal5 + productTotal6 + productTotal7 + productTotal8;
-    }
+    
+    let totalAmount = productTotal1 + productTotal2 + productTotal3 + productTotal4
+    + productTotal5 + productTotal6 + productTotal7 + productTotal8;
+    
 
   }
 
