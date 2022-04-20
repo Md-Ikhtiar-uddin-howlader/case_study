@@ -330,11 +330,11 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
     RoundedAmount = Amount.toFixed(2);
 
     let rmdnAmount = document.getElementById("rmdnAmount").innerHTML =
-    Amount - (Amount*0.02);
+    RoundedAmount - (RoundedAmount*0.02);
     RoundedRmdnAmount = rmdnAmount.toFixed(2);
 
     let gstAmount = document.getElementById("gstAmount").innerHTML =
-    rmdnAmount*1.06;
+    RoundedRmdnAmount*1.06;
     RoundedGstAmount = gstAmount.toFixed(2);
 
     let finalAmount = document.getElementById("finalAmount").innerHTML = RoundedGstAmount;
