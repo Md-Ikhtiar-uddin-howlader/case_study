@@ -259,7 +259,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.5);
 
 
 <!-- Trigger/Open The Modal -->
-<center><button class="button" id="invoiceBtn">SUBMIT FOR INVOICE</button></center>
+<center><button class="button" id="myBtn">SUBMIT FOR INVOICE</button></center>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
