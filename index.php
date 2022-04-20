@@ -329,7 +329,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
     Amount = Amount.toFixed(2);
 
     let rmdnAmount = document.getElementById("rmdnAmount").innerHTML =
-    Amount - (Amount*0.2);
+    Amount - (Amount*0.02);
     rmdnAmount = rmdnAmount.toFixed(2);
 
     let gstAmount = document.getElementById("gstAmount").innerHTML =
