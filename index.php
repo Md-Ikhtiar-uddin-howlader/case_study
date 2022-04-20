@@ -267,7 +267,17 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.5);
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
+
+    <table class="content-table">
+    <thead>
+      <tr>
+        <th>Item List</th>
+        <th>Details</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+      </tr>
+    </thead>
   </div>
 
 </div>
