@@ -277,6 +277,14 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.5);
         <th>Final Amount</th>
       </tr>
     </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
   </div>
 
 </div>
