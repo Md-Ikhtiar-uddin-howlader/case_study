@@ -252,6 +252,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.5);
        <td></td>
        <td></td>
      <td><b>TOTAL AMOUNT</b></td>
+     <td id="totalAmount"></td>
    </tr>
    
 </tbody>
