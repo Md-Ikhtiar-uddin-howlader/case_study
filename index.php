@@ -324,9 +324,8 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
     
     let totalAmount = document.getElementById("totalAmount").innerHTML =
     (price1+price2+price3+price4+price5+price6+price7+price8);
-    RoundedTotalAmount = totalAmount.toFixed(2);
 
-    let Amount = document.getElementById("Amount").innerHTML = RoundedTotalAmount;
+    let Amount = document.getElementById("Amount").innerHTML = totalAmount;
     RoundedAmount = Amount.toFixed(2);
 
     let rmdnAmount = document.getElementById("rmdnAmount").innerHTML =
