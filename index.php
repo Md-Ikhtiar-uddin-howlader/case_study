@@ -252,7 +252,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
        <td></td>
        <td></td>
      <td><b>TOTAL AMOUNT</b></td>
-     <td type=float id="totalAmount" onchange="getTotal()"></td>
+     <td id="totalAmount" onchange="getValue()"></td>
    </tr>
    
 </tbody>
@@ -321,9 +321,10 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
     let productTotal6 = document.getElementById("productTotal6").innerHTML = price6;
     let productTotal7 = document.getElementById("productTotal7").innerHTML = price7;
     let productTotal8 = document.getElementById("productTotal8").innerHTML = price8;
-
+    let totalAmount = document.getElementById("totalAmount").innerHTML =
+    (price1+price2+price3+price4+price5+price6+price7+price8);
   }
-
+  /*
   function getTotal()
   {
     let productTotal1 = document.getElementById("productTotal1").innerHTML;
@@ -337,7 +338,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
 
     let totalAmount = document.getElementById("totalAmount").innerHTML = (productTotal1 + productTotal2 + productTotal3 + productTotal4 + 
     productTotal5 + productTotal6 + productTotal7 + productTotal8);
-  }
+  }*/
 
 // Get the modal
 var modal = document.getElementById("myModal");
