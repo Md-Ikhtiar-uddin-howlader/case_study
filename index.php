@@ -280,10 +280,10 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
     </thead>
     <tbody>
       <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td id="totalAmount" onchange="getValue()"></td>
+        <td id="rmdnAmount" onchange="getValue()"></td>
+        <td id="gstAmount" onchange="getValue()"></td>
+        <td id="finalAmount" onchange="getValue()"></td>
       </tr>
     </tbody>
   </div>
@@ -321,24 +321,17 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
     let productTotal6 = document.getElementById("productTotal6").innerHTML = price6;
     let productTotal7 = document.getElementById("productTotal7").innerHTML = price7;
     let productTotal8 = document.getElementById("productTotal8").innerHTML = price8;
+    
     let totalAmount = document.getElementById("totalAmount").innerHTML =
     (price1+price2+price3+price4+price5+price6+price7+price8);
+    let rmdnAmount = document.getElementById("rmdnAmount").innerHTML =
+    totalAmount*0.2;
+    let gstAmount = document.getElementById("gstAmount").innerHTML =
+    rmdnAmount*1.06;
+    let finalAmount = document.getElementById("finalAmount").innerHTML =
+    (price1+price2+price3+price4+price5+price6+price7+price8);
+    rmdnAmount*1.06;
   }
-  /*
-  function getTotal()
-  {
-    let productTotal1 = document.getElementById("productTotal1").innerHTML;
-    let productTotal2 = document.getElementById("productTotal2").innerHTML;
-    let productTotal3 = document.getElementById("productTotal3").innerHTML;
-    let productTotal4 = document.getElementById("productTotal4").innerHTML;
-    let productTotal5 = document.getElementById("productTotal5").innerHTML;
-    let productTotal6 = document.getElementById("productTotal6").innerHTML;
-    let productTotal7 = document.getElementById("productTotal7").innerHTML;
-    let productTotal8 = document.getElementById("productTotal8").innerHTML;
-
-    let totalAmount = document.getElementById("totalAmount").innerHTML = (productTotal1 + productTotal2 + productTotal3 + productTotal4 + 
-    productTotal5 + productTotal6 + productTotal7 + productTotal8);
-  }*/
 
 // Get the modal
 var modal = document.getElementById("myModal");
