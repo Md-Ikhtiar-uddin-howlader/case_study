@@ -16,7 +16,9 @@
  font-size:x-large;
 }
 
-
+.date{
+    float: right;
+}
 
 .content-table {
     border-collapse: collapse;
