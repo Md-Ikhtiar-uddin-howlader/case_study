@@ -280,7 +280,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
     </thead>
     <tbody>
       <tr>
-        <td id="Amount" onchange="RoundedAmount.getValue()"></td>
+        <td id="Amount" onchange="Amount.getValue()"></td>
         <td id="rmdnAmount" onchange="RoundedRmdnAmount.getValue()"></td>
         <td id="gstAmount" onchange="RoundedGstAmount.getValue()"></td>
         <td id="finalAmount" onchange="RoundedGstAmount.getValue()"></td>
@@ -326,10 +326,9 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
     (price1+price2+price3+price4+price5+price6+price7+price8);
 
     let Amount = document.getElementById("Amount").innerHTML = totalAmount;
-    RoundedAmount = Amount.toFixed(2);
 
     let rmdnAmount = document.getElementById("rmdnAmount").innerHTML =
-    RoundedAmount - (RoundedAmount*0.02);
+    Amount - (Amount*0.02);
     RoundedRmdnAmount = rmdnAmount.toFixed(2);
 
     let gstAmount = document.getElementById("gstAmount").innerHTML =
