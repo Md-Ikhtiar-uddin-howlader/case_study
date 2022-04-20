@@ -252,7 +252,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
        <td></td>
        <td></td>
      <td><b>TOTAL AMOUNT</b></td>
-     <td id="totalAmount" onchange="getTotal()"></td>
+     <td type=float id="totalAmount" onchange="getTotal()"></td>
    </tr>
    
 </tbody>
