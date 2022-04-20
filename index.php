@@ -280,7 +280,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
     </thead>
     <tbody>
       <tr>
-        <td id="totalAmount" onchange="getValue()"></td>
+        <td id="Amount" onchange="getValue()"></td>
         <td id="rmdnAmount" onchange="getValue()"></td>
         <td id="gstAmount" onchange="getValue()"></td>
         <td id="finalAmount" onchange="getValue()"></td>
@@ -324,6 +324,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
     
     let totalAmount = document.getElementById("totalAmount").innerHTML =
     (price1+price2+price3+price4+price5+price6+price7+price8);
+    let Amount = document.getElementById("totalAmount").innerHTML = totalAmount;
     let rmdnAmount = document.getElementById("rmdnAmount").innerHTML =
     totalAmount*0.2;
     let gstAmount = document.getElementById("gstAmount").innerHTML =
