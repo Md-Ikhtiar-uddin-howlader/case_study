@@ -326,8 +326,16 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
 
   function getTotal()
   {
-    let totalAmount = document.getElementById("totalAmount").innerHTML;
-    let totalAmount = (productTotal1 + productTotal2 + productTotal3 + productTotal4 + 
+    let productTotal1 = document.getElementById("productTotal1").innerHTML;
+    let productTotal2 = document.getElementById("productTotal2").innerHTML;
+    let productTotal3 = document.getElementById("productTotal3").innerHTML;
+    let productTotal4 = document.getElementById("productTotal4").innerHTML;
+    let productTotal5 = document.getElementById("productTotal5").innerHTML;
+    let productTotal6 = document.getElementById("productTotal6").innerHTML;
+    let productTotal7 = document.getElementById("productTotal7").innerHTML;
+    let productTotal8 = document.getElementById("productTotal8").innerHTML;
+
+    let totalAmount = document.getElementById("totalAmount").innerHTML = (productTotal1 + productTotal2 + productTotal3 + productTotal4 + 
     productTotal5 + productTotal6 + productTotal7 + productTotal8);
   }
 
