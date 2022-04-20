@@ -95,7 +95,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.5);
   </select>
   </td>
 
-     <td></td>
+     <td>total[0]</td>
 
    </tr>
    <tr>
@@ -116,7 +116,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.5);
     <option value="9">9</option>
   </select>
   </td>
-     <td></td>
+     <td>total[1]</td>
    </tr>
 
    <tr>
