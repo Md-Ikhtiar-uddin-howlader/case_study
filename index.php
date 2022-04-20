@@ -7,20 +7,16 @@
     <title>A Point of Sale System</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<style>
-
-
-
-</style>
-
 <body>
 
 <?php
+// created class for store data
+// Created by MD Ikhtiar uddin howlader(1834619)
 class Product{
    public $name;
    public $description;
    public $price;
-
+    // create function for get or print values
     function getName(){
         return $this->name;
     }
@@ -30,7 +26,7 @@ class Product{
     function getPrice(){
         return $this->price;
     }
-
+    // create function for set values
     function setValue($name, $description, $price){
 
         $this->name = $name;
@@ -40,7 +36,7 @@ class Product{
     }
 
 }
-
+// create object
 $chickenBurger = new Product;
 $chickenBurgerCheese = new Product;
 $bbqChickenBurger = new Product;
@@ -50,6 +46,7 @@ $juicyBeefBurger = new Product;
 $bun = new Product;
 $cheeseBun = new Product;
 
+// input data in class of objects
 $chickenBurger->setValue("Chicken burger", "This is chicken burger with fried chicken", 13.50);
 $chickenBurgerCheese->setValue("Chicken cheese burger","This is chicken burger with fried chicken and cheese", 14.50);
 $bbqChickenBurger->setValue("BBQ Chicken cheese burger", "This is BBQ chicken burger with bbq chicken petty and cheese", 17.00);
@@ -60,10 +57,19 @@ $bun->setValue("Chocolate bun", "Small chocolate bun", 2.00);
 $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
 ?>
 
-
+<!-- markup GUI created by rasel ahmed(1836247) -->
 
     <marquee onmouseover="stop()"; onmouseout="start()" class="headline" ><h1>**Welcome to IIUM Cafe**</h1></marquee>
-    <h3 class ="heading"><u>'Please Select Your Items'</u></h3> 
+    <h3 class ="heading"><u>'Please Select Your Items'</u></h3>
+
+    <!-- use date function(IKHTIAR) -->
+<h4 style="text-align:right">Date: 
+<?php
+// Return date/time info of a timestamp; then format the output
+    $mydate=getdate(date("U"));
+    echo "$mydate[weekday], $mydate[month] $mydate[mday], $mydate[year]";
+?>
+</h4>
  
  <table class="content-table">
   <thead>
@@ -77,7 +83,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
 </thead>
    <tbody>
    <tr>
-     <td><?php echo $chickenBurger->getName()?></td>
+     <?php echo $chickenBurger->getName()?></td>  <!--input data in table using php function -->
      <td><?php echo $chickenBurger->getDescription()?></td>
      <td><?php echo $chickenBurger->getPrice()?></td>
     <td>Add Quantity-->
@@ -292,10 +298,10 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
 
 <script>
 
-// 13.5 , 14.5 , 17.0, 14, 15,19, 2, 1.5
-
   function getValue()
   {
+    // get user selected value from table
+    // created by saif, ikhtiar
     let quantity1= document.getElementById("quantity1").value;
     let quantity2= document.getElementById("quantity2").value;
     let quantity3= document.getElementById("quantity3").value;
@@ -304,6 +310,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
     let quantity6= document.getElementById("quantity6").value;
     let quantity7= document.getElementById("quantity7").value;
     let quantity8= document.getElementById("quantity8").value;
+    // calculation product total
     let price1 = quantity1*13.5;
     let price2 = quantity2*14.5;
     let price3 = quantity3*17;
@@ -312,7 +319,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
     let price6 = quantity6*19;
     let price7 = quantity7*2;
     let price8 = quantity8*1.5;
-
+    // set product total in table
     let productTotal1 = document.getElementById("productTotal1").innerHTML = price1;
     let productTotal2 = document.getElementById("productTotal2").innerHTML = price2;
     let productTotal3 = document.getElementById("productTotal3").innerHTML = price3;
@@ -322,11 +329,13 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
     let productTotal7 = document.getElementById("productTotal7").innerHTML = price7;
     let productTotal8 = document.getElementById("productTotal8").innerHTML = price8;
     
+    // calculation total amount of all product
     let totalAmount = document.getElementById("totalAmount").innerHTML =
     Math.floor((price1+price2+price3+price4+price5+price6+price7+price8)*100) /100.0;
 
     let Amount = document.getElementById("Amount").innerHTML = totalAmount;
 
+    // calculation discount
     let rmdnAmount = document.getElementById("rmdnAmount").innerHTML =
     Math.floor((Amount - (Amount*0.02))*100) / 100.0;
 
