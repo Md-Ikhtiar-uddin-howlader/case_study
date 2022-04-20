@@ -282,8 +282,8 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
       <tr>
         <td id="Amount" onchange="RoundedAmount.getValue()"></td>
         <td id="rmdnAmount" onchange="RoundedRmdnAmount.getValue()"></td>
-        <td id="gstAmount" onchange="getValue()"></td>
-        <td id="finalAmount" onchange="getValue()"></td>
+        <td id="gstAmount" onchange="RoundedGstAmount.getValue()"></td>
+        <td id="finalAmount" onchange="RoundedGstAmount.getValue()"></td>
       </tr>
     </tbody>
   </div>
