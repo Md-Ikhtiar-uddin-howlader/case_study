@@ -334,10 +334,9 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
 
     let gstAmount = document.getElementById("gstAmount").innerHTML =
     rmdnAmount*1.06;
-    gstAmount = gstAmount.toFixed(2);
+    RoundedGstAmount = gstAmount.toFixed(2);
 
-    let finalAmount = document.getElementById("finalAmount").innerHTML =
-    gstAmount;
+    let finalAmount = document.getElementById("finalAmount").innerHTML = RoundedGstAmount;
   }
 
 // Get the modal
