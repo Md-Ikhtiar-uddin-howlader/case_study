@@ -321,7 +321,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
     let productTotal7 = document.getElementById("productTotal7").innerHTML = price7;
     let productTotal8 = document.getElementById("productTotal8").innerHTML = price8;
 
-    let totalAmount = document.getElementById("totalAmount").value;
+    let totalAmount = document.getElementById("totalAmount").innerHTML;
     
     let totalAmount = productTotal1 + productTotal2 + productTotal3 + productTotal4
     + productTotal5 + productTotal6 + productTotal7 + productTotal8;
