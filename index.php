@@ -338,7 +338,6 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
 
     let finalAmount = document.getElementById("finalAmount").innerHTML =
     gstAmount;
-    finalAmount = finalAmount.toFixed(2);
   }
 
 // Get the modal
