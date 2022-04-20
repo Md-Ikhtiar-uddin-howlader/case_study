@@ -273,7 +273,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.5);
       <tr>
         <th>Amount</th>
         <th>Ramadhan Discount (2%)</th>
-        <th>GST Tax (6%)</th>
+        <th>GST (6%)</th>
         <th>Final Amount</th>
       </tr>
     </thead>
