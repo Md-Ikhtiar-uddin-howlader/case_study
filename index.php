@@ -252,7 +252,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
        <td></td>
        <td></td>
      <td><b>TOTAL AMOUNT</b></td>
-     <td id="totalAmount" onchange="getTotal()"></td>
+     <td id="totalAmount"></td>
    </tr>
    
 </tbody>
@@ -336,8 +336,7 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
     let productTotal7 = document.getElementById("productTotal7").innerHTML;
     let productTotal8 = document.getElementById("productTotal8").innerHTML;
     
-    let totalAmount = productTotal1 + productTotal2 + productTotal3 + productTotal4
-    + productTotal5 + productTotal6 + productTotal7 + productTotal8;
+    let totalAmount = productTotal1 + productTotal2 + productTotal3 + productTotal4 + productTotal5 + productTotal6 + productTotal7 + productTotal8;
   }
 
 // Get the modal
