@@ -323,8 +323,14 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
 
   }
 
-
-
+  function getTotal(){
+    let totalAmount = document.getElementById("totalAmount").value;
+    for (let i=0; i<8; i++)
+    {
+      totalAmount += productTotal1 + productTotal2 + productTotal3 + productTotal4
+      + productTotal5 + productTotal6 + productTotal7 + productTotal8;
+    }
+  }
 
 
 // Get the modal
