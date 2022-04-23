@@ -1,0 +1,24 @@
+Chicken burger
+This is chicken burger with fried chicken 
+13.50
+Chicken cheese burger
+This is chicken burger with fried chicken and cheese 
+14.50
+BBQ Chicken cheese burger
+This is BBQ chicken burger with bbq chicken petty and cheese
+17.00
+Beef burger
+This is beef burger with beef petty
+14.00
+Beef Cheese burger
+This is beef burger with beef petty and cheese
+15.00
+Juicy Beef Cheese burger
+This is beef burger with double juicy beef petty and cheese
+19.00
+Chocolate bun
+Small chocolate bun
+2.00
+Cheese bun
+Small cheese bun
+1.50

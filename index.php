@@ -8,55 +8,87 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<?php 
+  //created by Ikhtiar(1834619) 
+  // take data from local storage
+  $data = file('data.txt');
 
-<?php
-// created class for store data
-// Created by MD Ikhtiar uddin howlader(1834619)
-class Product{
-   public $name;
-   public $description;
-   public $price;
-    // create function for get or print values
-    function getName(){
-        return $this->name;
-    }
-    function getDescription(){
-        return $this->description;
-    }
-    function getPrice(){
-        return $this->price;
-    }
-    // create function for set values
-    function setValue($name, $description, $price){
-
-        $this->name = $name;
-        $this->description = $description;
-        $this->price = $price;
-    
-    }
-
-}
-// create object
-$chickenBurger = new Product;
-$chickenBurgerCheese = new Product;
-$bbqChickenBurger = new Product;
-$beefBurger = new Product;
-$beefBurgerCheese = new Product;
-$juicyBeefBurger = new Product;
-$bun = new Product;
-$cheeseBun = new Product;
-
-// input data in class of objects
-$chickenBurger->setValue("Chicken burger", "This is chicken burger with fried chicken", 13.50);
-$chickenBurgerCheese->setValue("Chicken cheese burger","This is chicken burger with fried chicken and cheese", 14.50);
-$bbqChickenBurger->setValue("BBQ Chicken cheese burger", "This is BBQ chicken burger with bbq chicken petty and cheese", 17.00);
-$beefBurger->setValue("Beef burger", "This is beef burger with beef petty", 14.00);
-$beefBurgerCheese->setValue("Beef Cheese burger", "This is beef burger with beef petty and cheese", 15.00);
-$juicyBeefBurger->setValue("Juicy Beef Cheese burger", "This is beef burger with double juicy beef petty and cheese", 19.00);
-$bun->setValue("Chocolate bun", "Small chocolate bun", 2.00);
-$cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
+  // using loop for store data in variable
+  for($i = 0; $i <24; $i++){
+      if($i==0){
+        $chickenBurgerName = $data[$i];
+      }
+      elseif($i==1){
+        $chickenBurgerDescription = $data[$i];
+      }
+      elseif($i==2){
+        $chickenBurgerPrice = $data[$i];
+      }
+      elseif($i==3){
+        $chickenBurgerCheeseName = $data[$i];
+      }
+      elseif($i==4){
+        $chickenBurgerCheeseDescription = $data[$i];
+      }
+      elseif($i==5){
+        $chickenBurgerCheesePrice = $data[$i];
+      }
+      elseif($i==6){
+        $bbqChickenBurgerName = $data[$i];
+      }
+      elseif($i==7){
+        $bbqChickenBurgerDescription = $data[$i];
+      }
+      elseif($i==8){
+        $bbqChickenBurgerPrice = $data[$i];
+      }
+      elseif($i==9){
+        $beefBurgerName = $data[$i];
+      }
+      elseif($i==10){
+        $beefBurgerDescription = $data[$i];
+      }
+      elseif($i==11){
+        $beefBurgerPrice = $data[$i];
+      }
+      elseif($i==12){
+        $beefBurgerCheeseName = $data[$i];
+      }
+      elseif($i==13){
+        $beefBurgerCheeseDescription = $data[$i];
+      }
+      elseif($i==14){
+        $beefBurgerCheesePrice = $data[$i];
+      }
+      elseif($i==15){
+        $juicyBeefBurgerName = $data[$i];
+      }
+      elseif($i==16){
+        $juicyBeefBurgerDescription = $data[$i];
+      }
+      elseif($i==17){
+        $juicyBeefBurgerPrice = $data[$i];
+      }
+      elseif($i==18){
+        $bunName = $data[$i];
+      }
+      elseif($i==19){
+        $bunDescription = $data[$i];
+      }
+      elseif($i==20){
+        $bunPrice = $data[$i];
+      }
+      elseif($i==21){
+        $cheeseBunName = $data[$i];
+      }
+      elseif($i==22){
+        $cheeseBunDescription = $data[$i];
+      }
+      elseif($i==23){
+        $cheeseBunPrice = $data[$i];
+      }
+  }
 ?>
-
 <!-- markup GUI created by rasel ahmed(1836247) -->
 
     <marquee onmouseover="stop()"; onmouseout="start()" class="headline" ><h1>**Welcome to IIUM Cafe**</h1></marquee>
@@ -66,11 +98,11 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
 <h4 style="text-align:right">Date: 
 <?php
 // Return date/time info of a timestamp; then format the output
-    $mydate=getdate(date("U"));
-    echo "$mydate[weekday], $mydate[month] $mydate[mday], $mydate[year]";
+    $date=getdate(date("U"));
+    echo "$date[weekday], $date[month] $date[mday], $date[year]";
 ?>
 </h4>
- 
+  <!-- table created by rasel ahmed -->
  <table class="content-table">
   <thead>
    <tr>
@@ -83,174 +115,189 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
 </thead>
    <tbody>
    <tr>
-     <?php echo $chickenBurger->getName()?></td>  <!--input data in table using php function -->
-     <td><?php echo $chickenBurger->getDescription()?></td>
-     <td><?php echo $chickenBurger->getPrice()?></td>
-    <td>Add Quantity-->
-      <select id="quantity1" onchange="getValue()">
-    <option value="0">0</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">8</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-  </select>
-  </td>
-
-     <td id="productTotal1"></td>
+     <td><?php echo $chickenBurgerName?></td>  <!--input data in table using php function(Ikhtiar) -->
+     <td><?php echo $chickenBurgerDescription?></td>
+     <td><?php echo $chickenBurgerPrice?></td>
+     <?php
+echo "    <td>Add Quantity-->\n";
+echo "     <select id=\"quantity1\" onchange=\"getValue()\">\n";
+echo "   <option value=\"0\">0</option>\n";
+echo "   <option value=\"1\">1</option>\n";
+echo "   <option value=\"2\">2</option>\n";
+echo "   <option value=\"3\">3</option>\n";
+echo "   <option value=\"4\">4</option>\n";
+echo "   <option value=\"5\">5</option>\n";
+echo "   <option value=\"6\">6</option>\n";
+echo "   <option value=\"7\">7</option>\n";
+echo "   <option value=\"8\">8</option>\n";
+echo "   <option value=\"9\">9</option>\n";
+echo " </select>\n";
+echo " </td>\n";
+echo "     <td id=\"productTotal1\"></td>\n";
+?>
 
    </tr>
    <tr>
-   <td><?php echo $chickenBurgerCheese->getName()?></td>
-    <td><?php echo $chickenBurgerCheese->getDescription()?></td>
-    <td><?php echo $chickenBurgerCheese->getPrice()?></td>
-    <td>Add Quantity-->
-      <select id="quantity2" onchange="getValue()">
-    <option value="0">0</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">8</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-  </select>
-  </td>
-     <td id="productTotal2"></td>
+   <td><?php echo $chickenBurgerCheeseName?></td>
+    <td><?php echo $chickenBurgerCheeseDescription?></td>
+    <td><?php echo $chickenBurgerCheesePrice?></td>
+    <?php
+echo "    <td>Add Quantity-->\n";
+echo "     <select id=\"quantity2\" onchange=\"getValue()\">\n";
+echo "   <option value=\"0\">0</option>\n";
+echo "   <option value=\"1\">1</option>\n";
+echo "   <option value=\"2\">2</option>\n";
+echo "   <option value=\"3\">3</option>\n";
+echo "   <option value=\"4\">4</option>\n";
+echo "   <option value=\"5\">5</option>\n";
+echo "   <option value=\"6\">6</option>\n";
+echo "   <option value=\"7\">7</option>\n";
+echo "   <option value=\"8\">8</option>\n";
+echo "   <option value=\"9\">9</option>\n";
+echo " </select>\n";
+echo " </td>\n";
+echo "     <td id=\"productTotal2\"></td>\n";
+?>
    </tr>
 
    <tr>
-     <td><?php echo $bbqChickenBurger->getName()?></td>
-     <td><?php echo $bbqChickenBurger->getDescription()?></td>
-     <td><?php echo $bbqChickenBurger->getPrice()?></td>
-     <td>Add Quantity-->
-      <select id="quantity3" onchange="getValue()">
-    <option value="0">0</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">8</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-  </select>
-  </td>
-     <td id="productTotal3"></td>
-   </tr>
-
-
-   <tr>
-   <td><?php echo $beefBurger->getName()?></td>
-     <td><?php echo $beefBurger->getDescription()?></td>
-     <td><?php echo $beefBurger->getPrice()?></td>
-     <td>Add Quantity-->
-      <select id="quantity4" onchange="getValue()">
-    <option value="0">0</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">8</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-  </select>
-  </td>
-     <td id="productTotal4"></td>
+     <td><?php echo $bbqChickenBurgerName?></td>
+     <td><?php echo $bbqChickenBurgerDescription?></td>
+     <td><?php echo $bbqChickenBurgerPrice?></td>
+     <?php
+echo "    <td>Add Quantity-->\n";
+echo "     <select id=\"quantity3\" onchange=\"getValue()\">\n";
+echo "   <option value=\"0\">0</option>\n";
+echo "   <option value=\"1\">1</option>\n";
+echo "   <option value=\"2\">2</option>\n";
+echo "   <option value=\"3\">3</option>\n";
+echo "   <option value=\"4\">4</option>\n";
+echo "   <option value=\"5\">5</option>\n";
+echo "   <option value=\"6\">6</option>\n";
+echo "   <option value=\"7\">7</option>\n";
+echo "   <option value=\"8\">8</option>\n";
+echo "   <option value=\"9\">9</option>\n";
+echo " </select>\n";
+echo " </td>\n";
+echo "     <td id=\"productTotal3\"></td>\n";
+?>
    </tr>
 
 
    <tr>
-   <td><?php echo $beefBurgerCheese->getName()?></td>
-     <td><?php echo $beefBurgerCheese->getDescription()?></td>
-     <td><?php echo $beefBurgerCheese->getPrice()?></td>
-     <td>Add Quantity-->
-      <select id="quantity5" onchange="getValue()">
-    <option value="0">0</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">8</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-  </select>
-  </td>
-     <td id="productTotal5"></td>
+   <td><?php echo $beefBurgerName?></td>
+     <td><?php echo $beefBurgerDescription?></td>
+     <td><?php echo $beefBurgerPrice?></td>
+     <?php
+echo "    <td>Add Quantity-->\n";
+echo "     <select id=\"quantity4\" onchange=\"getValue()\">\n";
+echo "   <option value=\"0\">0</option>\n";
+echo "   <option value=\"1\">1</option>\n";
+echo "   <option value=\"2\">2</option>\n";
+echo "   <option value=\"3\">3</option>\n";
+echo "   <option value=\"4\">4</option>\n";
+echo "   <option value=\"5\">5</option>\n";
+echo "   <option value=\"6\">6</option>\n";
+echo "   <option value=\"7\">7</option>\n";
+echo "   <option value=\"8\">8</option>\n";
+echo "   <option value=\"9\">9</option>\n";
+echo " </select>\n";
+echo " </td>\n";
+echo "     <td id=\"productTotal4\"></td>\n";
+?>
    </tr>
 
 
    <tr>
-   <td><?php echo $juicyBeefBurger->getName()?></td>
-     <td><?php echo $juicyBeefBurger->getDescription()?></td>
-     <td><?php echo $juicyBeefBurger->getPrice()?></td>
-     <td>Add Quantity-->
-      <select id="quantity6" onchange="getValue()">
-    <option value="0">0</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">8</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-  </select>
-  </td>
-     <td id="productTotal6"></td>
+   <td><?php echo $beefBurgerCheeseName?></td>
+     <td><?php echo $beefBurgerCheeseDescription?></td>
+     <td><?php echo $beefBurgerCheesePrice?></td>
+     <?php
+echo "    <td>Add Quantity-->\n";
+echo "     <select id=\"quantity5\" onchange=\"getValue()\">\n";
+echo "   <option value=\"0\">0</option>\n";
+echo "   <option value=\"1\">1</option>\n";
+echo "   <option value=\"2\">2</option>\n";
+echo "   <option value=\"3\">3</option>\n";
+echo "   <option value=\"4\">4</option>\n";
+echo "   <option value=\"5\">5</option>\n";
+echo "   <option value=\"6\">6</option>\n";
+echo "   <option value=\"7\">7</option>\n";
+echo "   <option value=\"8\">8</option>\n";
+echo "   <option value=\"9\">9</option>\n";
+echo " </select>\n";
+echo " </td>\n";
+echo "     <td id=\"productTotal5\"></td>\n";
+?>
+   </tr>
+
+
+   <tr>
+   <td><?php echo $juicyBeefBurgerName?></td>
+     <td><?php echo $juicyBeefBurgerDescription?></td>
+     <td><?php echo $juicyBeefBurgerPrice?></td>
+     <?php
+echo "    <td>Add Quantity-->\n";
+echo "     <select id=\"quantity6\" onchange=\"getValue()\">\n";
+echo "   <option value=\"0\">0</option>\n";
+echo "   <option value=\"1\">1</option>\n";
+echo "   <option value=\"2\">2</option>\n";
+echo "   <option value=\"3\">3</option>\n";
+echo "   <option value=\"4\">4</option>\n";
+echo "   <option value=\"5\">5</option>\n";
+echo "   <option value=\"6\">6</option>\n";
+echo "   <option value=\"7\">7</option>\n";
+echo "   <option value=\"8\">8</option>\n";
+echo "   <option value=\"9\">9</option>\n";
+echo " </select>\n";
+echo " </td>\n";
+echo "     <td id=\"productTotal6\"></td>\n";
+?>
    </tr>
    <tr>
-   <td><?php echo $bun->getName()?></td>
-     <td><?php echo $bun->getDescription()?></td>
-     <td><?php echo $bun->getPrice()?></td>
-     <td>Add Quantity-->
-      <select id="quantity7" onchange="getValue()">
-    <option value="0">0</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">8</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-  </select>
-  </td>
-     <td id="productTotal7"></td>
+   <td><?php echo $bunName?></td>
+     <td><?php echo $bunDescription?></td>
+     <td><?php echo $bunPrice?></td>
+     <?php
+echo "    <td>Add Quantity-->\n";
+echo "     <select id=\"quantity7\" onchange=\"getValue()\">\n";
+echo "   <option value=\"0\">0</option>\n";
+echo "   <option value=\"1\">1</option>\n";
+echo "   <option value=\"2\">2</option>\n";
+echo "   <option value=\"3\">3</option>\n";
+echo "   <option value=\"4\">4</option>\n";
+echo "   <option value=\"5\">5</option>\n";
+echo "   <option value=\"6\">6</option>\n";
+echo "   <option value=\"7\">7</option>\n";
+echo "   <option value=\"8\">8</option>\n";
+echo "   <option value=\"9\">9</option>\n";
+echo " </select>\n";
+echo " </td>\n";
+echo "     <td id=\"productTotal7\"></td>\n";
+?>
    </tr>
 
    <tr>
-   <td><?php echo $cheeseBun->getName()?></td>
-     <td><?php echo $cheeseBun->getDescription()?></td>
-     <td><?php echo $cheeseBun->getPrice()?></td>
-     <td>Add Quantity-->
-      <select id="quantity8" onchange="getValue()">
-    <option value="0">0</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">8</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-  </select>
-  </td>
-     <td id="productTotal8"></td>
+   <td><?php echo $cheeseBunName?></td>
+     <td><?php echo $cheeseBunDescription?></td>
+     <td><?php echo $cheeseBunPrice?></td>
+     <?php
+echo "    <td>Add Quantity-->\n";
+echo "     <select id=\"quantity8\" onchange=\"getValue()\">\n";
+echo "   <option value=\"0\">0</option>\n";
+echo "   <option value=\"1\">1</option>\n";
+echo "   <option value=\"2\">2</option>\n";
+echo "   <option value=\"3\">3</option>\n";
+echo "   <option value=\"4\">4</option>\n";
+echo "   <option value=\"5\">5</option>\n";
+echo "   <option value=\"6\">6</option>\n";
+echo "   <option value=\"7\">7</option>\n";
+echo "   <option value=\"8\">8</option>\n";
+echo "   <option value=\"9\">9</option>\n";
+echo " </select>\n";
+echo " </td>\n";
+echo "     <td id=\"productTotal8\"></td>\n";
+?>
    </tr>
 
    <tr>
@@ -273,6 +320,13 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
 
   <!-- Modal content -->
   <div class="modal-content">
+
+  <?php 
+    // Return date/time info of a timestamp; then format the output
+    $date=getdate(date("U"));
+    echo "$date[weekday], $date[month] $date[mday], $date[year]";
+    ?>
+
     <span class="close">&times;</span>
 
     <table class="content-table">
@@ -338,10 +392,10 @@ $cheeseBun->setValue("Cheese bun", "Small cheese bun", 1.50);
     // calculation discount
     let rmdnAmount = document.getElementById("rmdnAmount").innerHTML =
     Math.floor((Amount - (Amount*0.02))*100) / 100.0;
-
+    // calculate tax
     let gstAmount = document.getElementById("gstAmount").innerHTML =
     Math.floor((rmdnAmount*1.06)*100) / 100.0;
-
+    // show the final amount
     let finalAmount = document.getElementById("finalAmount").innerHTML = gstAmount;
   }
 
@@ -371,7 +425,6 @@ window.onclick = function(event) {
   }
 }
 </script>
-
 
 </body>
 </html>
