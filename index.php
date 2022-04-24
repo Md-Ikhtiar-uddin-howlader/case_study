@@ -89,7 +89,7 @@
       }
   }
 ?>
-<!-- markup GUI created by rasel ahmed(1836247) -->
+<!-- markup GUI created by rasel ahmed -->
 
     <marquee onmouseover="stop()"; onmouseout="start()" class="headline" ><h1>**Welcome to IIUM Cafe**</h1></marquee>
     <h3 class ="heading"><u>'Please Select Your Items'</u></h3>
@@ -115,7 +115,7 @@
 </thead>
    <tbody>
    <tr>
-     <td><?php echo $chickenBurgerName?></td>  <!--input data in table using php function(Ikhtiar) -->
+     <td><?php echo $chickenBurgerName?></td>  <!--input data in table using php function(rasel) -->
      <td><?php echo $chickenBurgerDescription?></td>
      <td><?php echo $chickenBurgerPrice?></td>
      <?php
@@ -351,11 +351,11 @@ echo "     <td id=\"productTotal8\"></td>\n";
 </div>
 
 <script>
-
+// function created by ikhtiar
   function getValue()
   {
     // get user selected value from table
-    // created by saif, ikhtiar
+    // created by ikhtiar
     let quantity1= document.getElementById("quantity1").value;
     let quantity2= document.getElementById("quantity2").value;
     let quantity3= document.getElementById("quantity3").value;
@@ -364,6 +364,7 @@ echo "     <td id=\"productTotal8\"></td>\n";
     let quantity6= document.getElementById("quantity6").value;
     let quantity7= document.getElementById("quantity7").value;
     let quantity8= document.getElementById("quantity8").value;
+    // contribute saif
     // calculation product total
     let price1 = quantity1*13.5;
     let price2 = quantity2*14.5;
@@ -383,22 +384,23 @@ echo "     <td id=\"productTotal8\"></td>\n";
     let productTotal7 = document.getElementById("productTotal7").innerHTML = price7;
     let productTotal8 = document.getElementById("productTotal8").innerHTML = price8;
     
-    // calculation total amount of all product
+    // calculation total amount of all product(saif)
     let totalAmount = document.getElementById("totalAmount").innerHTML =
     Math.floor((price1+price2+price3+price4+price5+price6+price7+price8)*100) /100.0;
 
     let Amount = document.getElementById("Amount").innerHTML = totalAmount;
 
-    // calculation discount
+    // calculation discount created by haris
     let rmdnAmount = document.getElementById("rmdnAmount").innerHTML =
     Math.floor((Amount - (Amount*0.02))*100) / 100.0;
-    // calculate tax
+    // calculate tax created by ayub
     let gstAmount = document.getElementById("gstAmount").innerHTML =
     Math.floor((rmdnAmount*1.06)*100) / 100.0;
     // show the final amount
     let finalAmount = document.getElementById("finalAmount").innerHTML = gstAmount;
   }
 
+  // created by haris
 // Get the modal
 var modal = document.getElementById("myModal");
 
